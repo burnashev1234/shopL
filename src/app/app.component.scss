@@ -1,0 +1,79 @@
+.container {
+  margin: 50px auto;
+  height: auto;
+  padding: 0px 15px;
+}
+
+.topForm {
+  margin: 15px auto;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid rgb(155, 155, 155);
+  height: 50px;
+  font-weight: bold;
+  background-color:rgb(235, 235, 235);
+}
+
+.open-button {
+  width: 150px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  &:hover{
+    background-color: green;
+  }
+}
+
+.btn-close{
+  display: none;
+  width: 150px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  &:hover{
+    background-color: green;
+  }
+}
+
+.hiddenForm {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  
+}
+
+
+
+.labels {
+  display: flex;
+    flex-flow: row wrap;
+    border-radius: 10%;
+    justify-content: space-between;
+    margin: auto
+}
+
+
+
+
+

@@ -1,0 +1,18 @@
+<header class="topForm">
+  Список товаров
+</header>
+
+<div class="container">
+  <div class="labels">
+    <label style="visibility: hidden;">---</label>
+    <label class="labelName">Имя</label>
+    <label class="labelDescr">Описание</label>
+    <label class="labelCost">Цена</label>
+    <label style="visibility: hidden;">--------------</label>
+  </div>
+  
+  <app-product> </app-product>
+  <button class="open-button" id="btnOpen" (click)="openForm()">Добавить</button>
+  <button type="button" class="btn-close" id="btnClose" (click)="closeForm()">Закрыть</button>
+  <app-product-form class="hiddenForm" id="myForm"></app-product-form>
+</div>
