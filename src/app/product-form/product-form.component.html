@@ -1,0 +1,26 @@
+
+    <div class= "container">
+        <label for="title"> Наименование </label>
+        <input type="text" 
+        [(ngModel)]="title"
+        (keydown.enter)="addProduct()"
+        class="inputTxt"
+        >
+
+        <label for="cost">Цена</label>
+        <input type="number" 
+        [(ngModel)]="cost"
+        (keydown.enter)="addProduct()"
+        class="inputTxt"
+        >
+
+        <label for="description">Описание</label>
+        <input type="text" 
+        [(ngModel)]="description"
+        (keydown.enter)="addProduct()"
+        class="inputTxt"
+        >  
+
+        <button class="btn_add" (click)="addProduct()">Добавить</button> 
+    </div>
+    

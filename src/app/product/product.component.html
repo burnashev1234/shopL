@@ -1,0 +1,13 @@
+<ul *ngIf="productService.product.length; else noProduct" class="flex-container">
+  <li *ngFor="let prod of productService.product; let i = index" class="flex-item">
+    <strong> {{i+1}} </strong>
+      <div class="box">{{ prod.title }}</div>
+      <div class="box">{{ prod.descrition}} </div>
+      <div class="box">{{ prod.cost}} руб.</div>          
+    <button class="rm" (click)="removeProduct(prod.id)">Удалить</button>
+  </li>
+</ul>
+
+<ng-template #noProduct>
+  <p style="text-align: center; font-size: 1.5em; font-weight: bold;">Нет товаров</p>
+</ng-template>
